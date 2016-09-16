@@ -9,10 +9,11 @@ function insertAnchors(content) {
         var id = header.attr("id");
         if (!id) {
             id = slug(header.text());
-            header.attr("id", id);
         }
+        var encodeId = encodeURIComponent(id).replace(/%/g, '-');
+        header.attr("id", encodeId);
         header.prepend('<a name="' + id + '" class="plugin-anchor" '
-                   + 'href="#' + encodeURIComponent(id) + '">'
+                   + 'href="#' + encodeId + '">'
                    + '<i class="fa fa-link" aria-hidden="true"></i>'
                    + '</a>');
     });
