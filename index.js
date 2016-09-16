@@ -12,7 +12,7 @@ function insertAnchors(content) {
             header.attr("id", id);
         }
         header.prepend('<a name="' + id + '" class="plugin-anchor" '
-                   + 'href="#' + id + '">'
+                   + 'href="#' + encodeURIComponent(id) + '">'
                    + '<i class="fa fa-link" aria-hidden="true"></i>'
                    + '</a>');
     });
