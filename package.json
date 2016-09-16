@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-anchors-zhcn",
   "description": "Add Github style heading anchors to your Gitbook and encode chinese character",
   "main": "index.js",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "license": "Apache-2.0",
   "author": "Bo Marchman <bo.marchman@gmail.com>",
   "engines": {
